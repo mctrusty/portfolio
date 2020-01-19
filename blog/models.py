@@ -1,10 +1,15 @@
 from django.db import models
 
+class Category(models.Model):
+    name = models.CharField(max_length=50)
+
 class Blog(models.Model):
     title = models.CharField(max_length=200)
-    pub_date = models.DateField()
     body = models.TextField()
     image = models.ImageField(upload_to='images/', blank=True)
+    pub_date = models.DateField()
+    last_modified = models.DateTimeField(auto_now=True)
+    categories = models.ManyToManyField('Category', related_name='posts')
 
     def __str__(self):
         return self.title
