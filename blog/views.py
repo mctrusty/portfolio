@@ -10,7 +10,7 @@ def detail(request, blog_id):
     return render(request, 'blog/detail.html', {'blog':detailblog})
 
 def category(request, category):
-    posts = Category.objects.filter(
+    posts = Blog.objects.filter(
         categories__name__contains = category
     ).order_by(
         '-pub_date'
