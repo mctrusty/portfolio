@@ -10,6 +10,6 @@
     
     <br />
     
-    {{ blog.body }}
+    {{ blog.formatted_markdown | safe }}
 </div>
  {% endblock %}
