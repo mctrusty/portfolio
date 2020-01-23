@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+    <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#about-me">
+                  <span data-feather="home"></span>
+                  About <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">
+                  <span data-feather="file"></span>
+                  Experience
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="shopping-cart"></span>
+                  Education
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="users"></span>
+                  Interests
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <h2 id="about-me">About</h2>
+            <p>Lifelong learner and polyglot programmer with strong problem-solving skills. </p>
+            <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="http://www.linkedin.com/">
+                <span class="fa-stack fa-lg">
+                  
+                  <i class="fab fa-linkedin"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/mctrusty">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+            <hr/>
+            <h2 id="experience">Experience</h2>
+            <p>
+            Blah blah blah
+            </p>
+        </main>
+    </div>
+{% endblock %}
